@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Diversity and Distribution course support</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation"><span class="header-section-number">1</span> Motivation</a></li>
+  <li><a href="#species-distributions" id="toc-species-distributions" class="nav-link" data-scroll-target="#species-distributions"><span class="header-section-number">2</span> Species distributions</a>
+  <ul class="collapse">
+  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures"><span class="header-section-number">2.1</span> Figures</a>
+  <ul class="collapse">
+  <li><a href="#preston-diagram" id="toc-preston-diagram" class="nav-link" data-scroll-target="#preston-diagram"><span class="header-section-number">2.1.1</span> Preston diagram</a></li>
+  <li><a href="#whittaker-diagram" id="toc-whittaker-diagram" class="nav-link" data-scroll-target="#whittaker-diagram"><span class="header-section-number">2.1.2</span> Whittaker diagram</a></li>
+  </ul></li>
+  <li><a href="#broken-stick" id="toc-broken-stick" class="nav-link" data-scroll-target="#broken-stick"><span class="header-section-number">2.2</span> Broken stick</a></li>
+  <li><a href="#geometric" id="toc-geometric" class="nav-link" data-scroll-target="#geometric"><span class="header-section-number">2.3</span> Geometric</a></li>
+  <li><a href="#lognormal" id="toc-lognormal" class="nav-link" data-scroll-target="#lognormal"><span class="header-section-number">2.4</span> Lognormal</a></li>
+  <li><a href="#log-series" id="toc-log-series" class="nav-link" data-scroll-target="#log-series"><span class="header-section-number">2.5</span> Log-series</a></li>
+  <li><a href="#estimate-the-parameters" id="toc-estimate-the-parameters" class="nav-link" data-scroll-target="#estimate-the-parameters"><span class="header-section-number">2.6</span> Estimate the parameters</a></li>
+  <li><a href="#zero-sum-multinomial-distribution" id="toc-zero-sum-multinomial-distribution" class="nav-link" data-scroll-target="#zero-sum-multinomial-distribution"><span class="header-section-number">2.7</span> Zero-sum multinomial distribution</a></li>
+  </ul></li>
+  <li><a href="#species-accumulation-curves" id="toc-species-accumulation-curves" class="nav-link" data-scroll-target="#species-accumulation-curves"><span class="header-section-number">3</span> Species Accumulation Curves</a>
+  <ul class="collapse">
+  <li><a href="#bci-data" id="toc-bci-data" class="nav-link" data-scroll-target="#bci-data"><span class="header-section-number">3.1</span> BCI data</a></li>
+  <li><a href="#accumulation-of-subplots" id="toc-accumulation-of-subplots" class="nav-link" data-scroll-target="#accumulation-of-subplots"><span class="header-section-number">3.2</span> Accumulation of subplots</a></li>
+  <li><a href="#accumulation-curve" id="toc-accumulation-curve" class="nav-link" data-scroll-target="#accumulation-curve"><span class="header-section-number">3.3</span> Accumulation curve</a></li>
+  </ul></li>
+  <li><a href="#canonical-lognormal" id="toc-canonical-lognormal" class="nav-link" data-scroll-target="#canonical-lognormal"><span class="header-section-number">4</span> Canonical lognormal</a></li>
+  <li><a href="#richness" id="toc-richness" class="nav-link" data-scroll-target="#richness"><span class="header-section-number">5</span> Richness</a>
+  <ul class="collapse">
+  <li><a href="#dummy-communities" id="toc-dummy-communities" class="nav-link" data-scroll-target="#dummy-communities"><span class="header-section-number">5.1</span> Dummy communities</a></li>
+  <li><a href="#paracou-6" id="toc-paracou-6" class="nav-link" data-scroll-target="#paracou-6"><span class="header-section-number">5.2</span> Paracou 6</a></li>
+  <li><a href="#interpolation-extrapolation" id="toc-interpolation-extrapolation" class="nav-link" data-scroll-target="#interpolation-extrapolation"><span class="header-section-number">5.3</span> Interpolation / extrapolation</a></li>
+  </ul></li>
+  <li><a href="#shannon" id="toc-shannon" class="nav-link" data-scroll-target="#shannon"><span class="header-section-number">6</span> Shannon</a>
+  <ul class="collapse">
+  <li><a href="#information-function" id="toc-information-function" class="nav-link" data-scroll-target="#information-function"><span class="header-section-number">6.1</span> Information function</a></li>
+  <li><a href="#paracou-6-1" id="toc-paracou-6-1" class="nav-link" data-scroll-target="#paracou-6-1"><span class="header-section-number">6.2</span> Paracou 6</a></li>
+  <li><a href="#dummy-communities-1" id="toc-dummy-communities-1" class="nav-link" data-scroll-target="#dummy-communities-1"><span class="header-section-number">6.3</span> Dummy communities</a></li>
+  </ul></li>
+  <li><a href="#simpson" id="toc-simpson" class="nav-link" data-scroll-target="#simpson"><span class="header-section-number">7</span> Simpson</a>
+  <ul class="collapse">
+  <li><a href="#paracou-6-2" id="toc-paracou-6-2" class="nav-link" data-scroll-target="#paracou-6-2"><span class="header-section-number">7.1</span> Paracou 6</a></li>
+  </ul></li>
+  <li><a href="#generalized-entropy" id="toc-generalized-entropy" class="nav-link" data-scroll-target="#generalized-entropy"><span class="header-section-number">8</span> Generalized entropy</a>
+  <ul class="collapse">
+  <li><a href="#information" id="toc-information" class="nav-link" data-scroll-target="#information"><span class="header-section-number">8.1</span> Information</a></li>
+  <li><a href="#paracou-6-3" id="toc-paracou-6-3" class="nav-link" data-scroll-target="#paracou-6-3"><span class="header-section-number">8.2</span> Paracou 6</a></li>
+  <li><a href="#dummy-communities-2" id="toc-dummy-communities-2" class="nav-link" data-scroll-target="#dummy-communities-2"><span class="header-section-number">8.3</span> Dummy communities</a></li>
+  </ul></li>
+  <li><a href="#comparing-diversity" id="toc-comparing-diversity" class="nav-link" data-scroll-target="#comparing-diversity"><span class="header-section-number">9</span> Comparing diversity</a>
+  <ul class="collapse">
+  <li><a href="#asymptotic-diversity" id="toc-asymptotic-diversity" class="nav-link" data-scroll-target="#asymptotic-diversity"><span class="header-section-number">9.1</span> Asymptotic diversity</a></li>
+  <li><a href="#standardized-diversity" id="toc-standardized-diversity" class="nav-link" data-scroll-target="#standardized-diversity"><span class="header-section-number">9.2</span> Standardized diversity</a></li>
+  <li><a href="#sample-coverage" id="toc-sample-coverage" class="nav-link" data-scroll-target="#sample-coverage"><span class="header-section-number">9.3</span> Sample coverage</a></li>
+  </ul></li>
+  <li><a href="#phylogenetic-diversity" id="toc-phylogenetic-diversity" class="nav-link" data-scroll-target="#phylogenetic-diversity"><span class="header-section-number">10</span> Phylogenetic diversity</a>
+  <ul class="collapse">
+  <li><a href="#mock-data" id="toc-mock-data" class="nav-link" data-scroll-target="#mock-data"><span class="header-section-number">10.1</span> Mock data</a></li>
+  <li><a href="#paracou-6-4" id="toc-paracou-6-4" class="nav-link" data-scroll-target="#paracou-6-4"><span class="header-section-number">10.2</span> Paracou 6</a></li>
+  </ul></li>
+  <li><a href="#functional-diversity" id="toc-functional-diversity" class="nav-link" data-scroll-target="#functional-diversity"><span class="header-section-number">11</span> Functional diversity</a>
+  <ul class="collapse">
+  <li><a href="#mock-data-1" id="toc-mock-data-1" class="nav-link" data-scroll-target="#mock-data-1"><span class="header-section-number">11.1</span> Mock data</a></li>
+  <li><a href="#paracou-6-5" id="toc-paracou-6-5" class="nav-link" data-scroll-target="#paracou-6-5"><span class="header-section-number">11.2</span> Paracou 6</a></li>
+  <li><a href="#intraspecific-variability" id="toc-intraspecific-variability" class="nav-link" data-scroll-target="#intraspecific-variability"><span class="header-section-number">11.3</span> Intraspecific variability</a></li>
+  </ul></li>
+  <li><a href="#diversity-partitioning" id="toc-diversity-partitioning" class="nav-link" data-scroll-target="#diversity-partitioning"><span class="header-section-number">12</span> Diversity partitioning</a>
+  <ul class="collapse">
+  <li><a href="#mock-data-2" id="toc-mock-data-2" class="nav-link" data-scroll-target="#mock-data-2"><span class="header-section-number">12.1</span> Mock data</a></li>
+  <li><a href="#paracou-6-6" id="toc-paracou-6-6" class="nav-link" data-scroll-target="#paracou-6-6"><span class="header-section-number">12.2</span> Paracou 6</a>
+  <ul class="collapse">
+  <li><a href="#partitioning" id="toc-partitioning" class="nav-link" data-scroll-target="#partitioning"><span class="header-section-number">12.2.1</span> Partitioning</a></li>
+  <li><a href="#step-by-step" id="toc-step-by-step" class="nav-link" data-scroll-target="#step-by-step"><span class="header-section-number">12.2.2</span> Step by step</a></li>
+  <li><a href="#profiles" id="toc-profiles" class="nav-link" data-scroll-target="#profiles"><span class="header-section-number">12.2.3</span> Profiles</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Diversity and Distribution course support</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="motivation" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Motivation</h1>
+<p>This document contains code chunks to help you understanding the course. Don’t hesitate to modify them, add your own notes and code.</p>
+<p>It comes with a practical you will run at home (<code>Biodiv-Practical.Rmd</code>).</p>
+</section>
+<section id="species-distributions" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Species distributions</h1>
+<section id="figures" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="figures"><span class="header-section-number">2.1</span> Figures</h2>
+<section id="preston-diagram" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="preston-diagram"><span class="header-section-number">2.1.1</span> Preston diagram</h3>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-1_68e195a4273014abe308679fbebc8c88">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: le package 'tidyverse' a été compilé avec la version R 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: le package 'ggplot2' a été compilé avec la version R 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: le package 'lubridate' a été compilé avec la version R 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.2
+✔ ggplot2   4.0.3     ✔ tibble    3.3.0
+✔ lubridate 1.9.5     ✔ tidyr     1.3.1
+✔ purrr     1.1.0     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"vegan"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Le chargement a nécessité le package : permute</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(BCI)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Sum the 50 1-ha plots</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>BCI_50ha_abd <span class="ot">&lt;-</span> <span class="fu">colSums</span>(BCI)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>BCI_50ha_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">log10</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hist</span>(<span class="at">breaks =</span> <span class="dv">15</span>, <span class="at">main =</span> <span class="st">"Preston diagram"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Nb tree</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(BCI)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 21457</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#tree by hectars</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(BCI)<span class="sc">/</span><span class="dv">50</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 429.14</code></pre>
+</div>
+</div>
+<p>Probability densities</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-2_b85f716de7d3ecdacb4647fa69af5753">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>BCI_50ha_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">abundance =</span> .) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Bounded density</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x =</span> abundance), <span class="at">bounds =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="cn">Inf</span>)) <span class="sc">+</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="whittaker-diagram" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="whittaker-diagram"><span class="header-section-number">2.1.2</span> Whittaker diagram</h3>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_990db91c7a8032d73584577855f6c40e">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"divent"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: le package 'divent' a été compilé avec la version R 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Le chargement a nécessité le package : Rcpp</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>BCI_50ha_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Declare it is an "abundances" object</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_abundances</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(BCI_50ha_abd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1717</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="broken-stick" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="broken-stick"><span class="header-section-number">2.2</span> Broken stick</h2>
+<p>Random distributions are created by <code>divent::rxxx()</code>functions.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-4_9473a1852c352378fa7ea0f5e34468c5">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rcommunity</span>(</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># One community</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span>,</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Number of trees</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> <span class="dv">10000</span>,</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Number of species</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">species_number =</span> <span class="dv">300</span>,</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Distribution</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">distribution =</span> <span class="st">"bstick"</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Whittaker plot</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="geometric" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="geometric"><span class="header-section-number">2.3</span> Geometric</h2>
+<p>Random distribution.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-5_215b71168ff128dad5b76a030e7efce1">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rcommunity</span>(</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># One community</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span>,</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Number of trees</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> <span class="dv">10000</span>,</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Number of species</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">species_number =</span> <span class="dv">300</span>,</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Distribution</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">distribution =</span> <span class="st">"geom"</span>,</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">prob_geom =</span> <span class="fl">0.1</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Whittaker plot</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="lognormal" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="lognormal"><span class="header-section-number">2.4</span> Lognormal</h2>
+<p>Random distribution.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-6_8dcc2cd0eac45ee1e03b411dcffcecbb">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rcommunity</span>(</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># One community</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span>,</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Number of trees</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> <span class="dv">10000</span>,</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Number of species</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">species_number =</span> <span class="dv">300</span>,</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Distribution</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">distribution =</span> <span class="st">"lnorm"</span>,</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">sd_lnorm =</span> <span class="dv">1</span></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Whittaker plot</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Modify the standard deviation.</p>
+</section>
+<section id="log-series" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="log-series"><span class="header-section-number">2.5</span> Log-series</h2>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-7_06c0c534218f174bd4c251f13f2f36a3">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> </span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>( </span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> dgamma,</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">args =</span> <span class="fu">list</span>(<span class="at">shape =</span> <span class="dv">1</span>),</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Random distribution.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-8_2e8948cd5551e2c02134a4d5e19da508">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rcommunity</span>(</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># One community</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span>,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Number of trees</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> <span class="dv">10000</span>,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Number of species is calculated</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Distribution</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">distribution =</span> <span class="st">"lseries"</span>,</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">fisher_alpha =</span> <span class="dv">40</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Whittaker plot</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="estimate-the-parameters" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="estimate-the-parameters"><span class="header-section-number">2.6</span> Estimate the parameters</h2>
+<p>Draw a very large lognormal distribution.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-9_d6f81e30e7d408b7ed1d6de0e76177e9">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rcommunity</span>(</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># One community</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span>,</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Number of trees = max supported integer value</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> .Machine<span class="sc">$</span>integer.max,</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Number of species</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">species_number =</span> <span class="dv">300</span>,</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Distribution</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">distribution =</span> <span class="st">"lnorm"</span>,</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">sd_lnorm =</span> <span class="dv">1</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Name it</span></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">site =</span> <span class="st">"Large log-normal"</span>) <span class="ot">-&gt;</span></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>  comm_large_lnorm</span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a><span class="co">#plot it</span></span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(comm_large_lnorm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Sample it.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-10_faf86649b8d66a1f08f3fb0bed9629d3">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw 3000 trees from the large community</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rcommunity</span>(</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span>,</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> <span class="dv">3000</span>,</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">abd =</span> <span class="fu">as.numeric</span>(comm_large_lnorm)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Name it</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">site =</span> <span class="st">"Small log-normal"</span>) <span class="ot">-&gt;</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>  comm_small_lnorm</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a single tibble with all data</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>comm_large_lnorm <span class="sc">%&gt;%</span> </span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make a single tibble</span></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(comm_small_lnorm) <span class="ot">-&gt;</span></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>  comm_lnorm</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the distributions and fit a lognormal model</span></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(comm_lnorm, <span class="at">fit_rac =</span> <span class="cn">TRUE</span>, <span class="at">distribution =</span> <span class="st">"lnorm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Estimate the parameters</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fit_rac</span>(comm_lnorm, <span class="at">distribution =</span> <span class="st">"lnorm"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  site                mu sigma
+  &lt;chr&gt;            &lt;dbl&gt; &lt;dbl&gt;
+1 Large log-normal 15.3   1.03
+2 Small log-normal  1.85  1.02</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#for BCI</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">fit_rac</span>(BCI_50ha_abd, <span class="at">distribution =</span> <span class="st">"lnorm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$rac
+# A tibble: 108 × 2
+    rank abundance
+   &lt;dbl&gt;     &lt;dbl&gt;
+ 1  1.83      1717
+ 2  1.89      1681
+ 3  4.09       983
+ 4  5.51       788
+ 5  5.82       755
+ 6  6.15       724
+ 7  6.65       681
+ 8  7.13       644
+ 9  7.53       617
+10 13.3        381
+# ℹ 98 more rows
+
+$parameters
+# A tibble: 1 × 2
+     mu sigma
+  &lt;dbl&gt; &lt;dbl&gt;
+1  3.14  1.79</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>BCI_50ha_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_abundances</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>(<span class="at">fit_rac=</span><span class="cn">TRUE</span>, <span class="at">distribution =</span> <span class="st">"lnorm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-10-2.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="zero-sum-multinomial-distribution" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="zero-sum-multinomial-distribution"><span class="header-section-number">2.7</span> Zero-sum multinomial distribution</h2>
+<p>BCI parameters <span class="math inline">\(\theta\)</span> and <span class="math inline">\(m\)</span> are estimated following <span class="citation" data-cites="etienne2005">Etienne (<a href="#ref-etienne2005" role="doc-biblioref">2005</a>)</span> with the untb package.</p>
+<div class="cell" data-hash="index_cache/html/bci_params_36cd1246ce510c3bccf8589054105980">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># BCI data</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"vegan"</span>)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(BCI)</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>BCI_50ha <span class="ot">&lt;-</span> <span class="fu">colSums</span>(BCI)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Don't load untb because of conflicts with dplyr::count() and select()</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="co"># library("untb")</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(<span class="st">"data/BCI_logkda.RData"</span>)) {</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Use the saved result if available to save</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># computation resources</span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">load</span>(<span class="st">"data/BCI_logkda.RData"</span>)</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>  BCI_50ha <span class="sc">%&gt;%</span> </span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># name conflict with dplyr::count()</span></span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>  untb<span class="sc">::</span><span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># requires pari/gp installed and in the search paths,</span></span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># or use gp_binary argument</span></span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a>  untb<span class="sc">::</span><span class="fu">logkda</span>() <span class="ot">-&gt;</span></span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a>  BCI_logkda</span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Save the result</span></span>
+<span id="cb32-20"><a href="#cb32-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">save</span>(BCI_logkda, <span class="at">file =</span> <span class="st">"data/BCI_logkda.RData"</span>)</span>
+<span id="cb32-21"><a href="#cb32-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb32-22"><a href="#cb32-22" aria-hidden="true" tabindex="-1"></a>BCI_50ha <span class="sc">%&gt;%</span> </span>
+<span id="cb32-23"><a href="#cb32-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># name conflict with dplyr::count()</span></span>
+<span id="cb32-24"><a href="#cb32-24" aria-hidden="true" tabindex="-1"></a>  untb<span class="sc">::</span><span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb32-25"><a href="#cb32-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Estimate theta and m</span></span>
+<span id="cb32-26"><a href="#cb32-26" aria-hidden="true" tabindex="-1"></a>  untb<span class="sc">::</span><span class="fu">optimal.params</span>(<span class="at">log.kda =</span> BCI_logkda) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-27"><a href="#cb32-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>() <span class="ot">-&gt;</span></span>
+<span id="cb32-28"><a href="#cb32-28" aria-hidden="true" tabindex="-1"></a>  BCI_params</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     theta          m 
+47.6001882  0.0926531 </code></pre>
+</div>
+</div>
+<p>The distribution of the local community is derived. <span class="math inline">\(J\)</span> is that of BCI and <span class="math inline">\(m\)</span> was estimated previously.</p>
+<div class="cell" data-hash="index_cache/html/bci_sim_code_d87bef467fc078afff3f27c669d0e265">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>J <span class="ot">&lt;-</span> <span class="fu">sum</span>(BCI)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>theta <span class="ot">&lt;-</span> BCI_params[<span class="dv">1</span>]</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> BCI_params[<span class="dv">2</span>]</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"sads"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: le package 'sads' a été compilé avec la version R 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Le chargement a nécessité le package : stats4</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Le chargement a nécessité le package : bbmle</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: le package 'bbmle' a été compilé avec la version R 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attachement du package : 'bbmle'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>L'objet suivant est masqué depuis 'package:dplyr':
+
+    slice</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of species in the local community</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Svolkov</span>(theta, m, J) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Must be integers for the simulation</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Draw the species abundances</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rvolkov</span>(theta, m, J) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make it an abundances object top plot it</span></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_abundances</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Whittaker plot</span></span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>() <span class="ot">-&gt;</span></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>  BCI_sim_neutral</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in Svolkov(theta, m, J): The use of this function outside sads core
+code is deprecated and will be removed in a future version!</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm):
+suppression des ex-aequos de 'x'</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># BCI real distribution</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>BCI_50ha <span class="sc">%&gt;%</span> </span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sort</span>(<span class="at">decreasing =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">seq_len</span>(<span class="fu">n</span>())) <span class="ot">-&gt;</span> </span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>  BCI_tbl_50ha</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot altogether</span></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>BCI_sim_neutral <span class="sc">+</span></span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> BCI_tbl_50ha,</span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> rank, <span class="at">y =</span> value)</span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/bci_sim_code-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="species-accumulation-curves" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Species Accumulation Curves</h1>
+<section id="bci-data" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="bci-data"><span class="header-section-number">3.1</span> BCI data</h2>
+<p>Gather all subplots.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-11_b213924626506c79e33f00a83d57fad3">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"vegan"</span>)</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(BCI)</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>BCI <span class="sc">%&gt;%</span> </span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make an abundances object</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_abundances</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make all plot weights equals</span></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">weight =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Gather all 50 plots</span></span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">metacommunity</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Name it</span></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">site =</span> <span class="st">"BCI"</span>) <span class="ot">-&gt;</span> </span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>  BCI_all</span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(BCI_all, <span class="at">fit_rac =</span> <span class="cn">TRUE</span>, <span class="at">distribution =</span> <span class="st">"lnorm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fit_rac</span>(BCI_all, <span class="at">distribution =</span> <span class="st">"lnorm"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  site     mu sigma
+  &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 BCI    3.14  1.79</code></pre>
+</div>
+</div>
+<p>Abundance frequency counts help read the figure.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-12_ba9386c220935511ad3af1a50ea4ddd1">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>BCI <span class="sc">%&gt;%</span> </span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colSums</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abd_freq_count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="fu">arrange</span>(<span class="fu">desc</span>(abundance))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 108 × 2
+   abundance number_of_species
+       &lt;dbl&gt;         &lt;int[1d]&gt;
+ 1      1717                 1
+ 2      1681                 1
+ 3       983                 1
+ 4       788                 1
+ 5       755                 1
+ 6       724                 1
+ 7       681                 1
+ 8       644                 1
+ 9       617                 1
+10       381                 1
+# ℹ 98 more rows</code></pre>
+</div>
+</div>
+</section>
+<section id="accumulation-of-subplots" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="accumulation-of-subplots"><span class="header-section-number">3.2</span> Accumulation of subplots</h2>
+<p>Accumulate subplots in random order (Monte-Carlo). Plot the expectation and the confidence interval of the number of species with respect to the number of samples.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-13_4ebebd4940ca5d7fdd893dde2c7f5b74">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>BCI <span class="sc">%&gt;%</span> </span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">specaccum</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in cor(x &gt; 0): l'écart type est nul</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="accumulation-curve" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="accumulation-curve"><span class="header-section-number">3.3</span> Accumulation curve</h2>
+<p>Compute the expected accumulation curve of BCI up to twice the sampling effort, with its confidence interval.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-14_b12668f212bcee6d00c4e6ad77e35075">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of trees in BCI</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>BCI_n <span class="ot">&lt;-</span> <span class="fu">abd_sum</span>(BCI_all, <span class="at">as_numeric =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Asymptotic richness</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>BCI_richness <span class="ot">&lt;-</span> <span class="fu">div_richness</span>(BCI_all, <span class="at">as_numeric =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>BCI_all <span class="sc">%&gt;%</span> </span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">accum_hill</span>(</span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">levels =</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">2</span> <span class="sc">*</span> BCI_n, <span class="at">by =</span> <span class="dv">10</span>),</span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Run simulations to estimate uncertainty.</span></span>
+<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Start with 10 simulations, run 100 later</span></span>
+<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_simulations =</span> <span class="dv">10</span>,</span>
+<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>() <span class="sc">+</span></span>
+<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> BCI_n, <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb52-14"><a href="#cb52-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> BCI_richness, <span class="at">linetype =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="canonical-lognormal" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Canonical lognormal</h1>
+<p>ggplot seems to bug with weighted, bounded density and log scale.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-15_c7bd20306729dcd5a5fd493a7305fc65">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Most adundant species</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>BCI_50ha_mas <span class="ot">&lt;-</span> <span class="fu">max</span>(BCI_50ha_abd)</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>BCI_50ha_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">abundance =</span> .) <span class="sc">%&gt;%</span> </span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Bounded density</span></span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> abundance, <span class="at">color =</span> <span class="st">"Species curve"</span>), </span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">bounds =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="cn">Inf</span>)</span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Weighted density</span></span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(</span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> abundance, <span class="at">weight =</span> abundance, <span class="at">color =</span> <span class="st">"Individuals curve"</span>), </span>
+<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">bounds =</span> <span class="fu">c</span>(<span class="fu">min</span>(BCI_50ha_abd), <span class="fu">max</span>(BCI_50ha_abd))</span>
+<span id="cb53-15"><a href="#cb53-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb53-16"><a href="#cb53-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Some data points are outside of `bounds`. Removing them.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Correct curves.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-16_17304d42a8857b8c7b4811b793e327a7">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"GoFKernel"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: le package 'GoFKernel' a été compilé avec la version R 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Le chargement a nécessité le package : KernSmooth</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>KernSmooth 2.23 chargé
+ Copyright M. P. Wand 1997-2009</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">density.reflected</span>(<span class="fu">log10</span>(BCI_50ha_abd), <span class="at">lower =</span> <span class="dv">0</span>),</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"l"</span>, </span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="st">"red"</span>, </span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, .<span class="dv">8</span>),</span>
+<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Canonical BCI"</span>,</span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"log10(abundance)"</span></span>
+<span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb59-9"><a href="#cb59-9" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(</span>
+<span id="cb59-10"><a href="#cb59-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">density.reflected</span>(</span>
+<span id="cb59-11"><a href="#cb59-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">log10</span>(BCI_50ha_abd), </span>
+<span id="cb59-12"><a href="#cb59-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">weights =</span> BCI_50ha_abd, </span>
+<span id="cb59-13"><a href="#cb59-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower =</span> <span class="fu">min</span>(<span class="fu">log10</span>(BCI_50ha_abd)), </span>
+<span id="cb59-14"><a href="#cb59-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper =</span> <span class="fu">max</span>(<span class="fu">log10</span>(BCI_50ha_abd))</span>
+<span id="cb59-15"><a href="#cb59-15" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb59-16"><a href="#cb59-16" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in density.default(x, weights = pesos, ...): Selecting bandwidth *not*
+using 'weights'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in density.default(x.reflect, weights = p.reflect, ...): Selecting
+bandwidth *not* using 'weights'</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">max</span>(<span class="fu">log10</span>(BCI_50ha_abd)), <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="richness" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Richness</h1>
+<section id="dummy-communities" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="dummy-communities"><span class="header-section-number">5.1</span> Dummy communities</h2>
+<p>Build dummy communities.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-17_12d66e7818388274d9cb1dd915692c4b">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">sp_1 =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">1000</span>, <span class="dv">1000</span>),</span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">sp_2 =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">11</span>,    <span class="dv">1</span>,    <span class="dv">0</span>)</span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_abundances</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>() <span class="ot">-&gt;</span></span>
+<span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a>  comm_dummy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+  site   weight  sp_1  sp_2
+  &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 site_1     20    10    10
+2 site_2     21    10    11
+3 site_3   1001  1000     1
+4 site_4   1000  1000     0</code></pre>
+</div>
+</div>
+<p>Sample richness.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-18_d50a5df66a88777107e53b138d61eb82">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">div_richness</span>(comm_dummy, <span class="at">estimator =</span> <span class="st">"naive"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 5
+  site   weight estimator      order diversity
+  &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;
+1 site_1     20 naive              0         2
+2 site_2     21 naive              0         2
+3 site_3   1001 naive              0         2
+4 site_4   1000 Single Species     0         1</code></pre>
+</div>
+</div>
+<p>Asymptotic richness.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-19_e6bc55292d4e25fba7fb94498f6dfa77">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">div_richness</span>(comm_dummy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 5
+  site   weight estimator      order diversity
+  &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;
+1 site_1     20 Jackknife 0        0         2
+2 site_2     21 Jackknife 1        0         2
+3 site_3   1001 Jackknife 1        0         3
+4 site_4   1000 Single Species     0         1</code></pre>
+</div>
+</div>
+</section>
+<section id="paracou-6" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="paracou-6"><span class="header-section-number">5.2</span> Paracou 6</h2>
+<p>Prepare the data: gather the four subplots.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-20_1fe30d98965c0957c394db48ace25c76">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>paracou_6_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Gather all sites</span></span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">metacommunity</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Rename "matacommunity"</span></span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">site =</span> <span class="st">"Paracou 6"</span>) <span class="ot">-&gt;</span></span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>  p6_abundances</span>
+<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(p6_abundances)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Abundance frequencies.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-21_b56af61129e9ad47ec2add019e11cb7a">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>p6_abundances <span class="sc">%&gt;%</span> </span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.numeric</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">abd_freq_count</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 49 × 2
+   abundance number_of_species
+       &lt;dbl&gt;         &lt;int[1d]&gt;
+ 1         1                98
+ 2         2                58
+ 3         3                35
+ 4         4                22
+ 5         5                15
+ 6         6                 8
+ 7         7                13
+ 8         8                11
+ 9         9                 4
+10        10                10
+# ℹ 39 more rows</code></pre>
+</div>
+</div>
+<p>Estimators of richness.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-22_f08b441a819acedd3890cc2376c75719">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">div_richness</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"naive"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">div_richness</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"Chao1"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">div_richness</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"iChao"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Default estimator</span></span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">div_richness</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"jackknife"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">div_richness</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"jackknife"</span>, <span class="at">jack_max =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 5
+  site      weight estimator   order diversity
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt;     &lt;dbl&gt;
+1 Paracou 6   6.25 naive           0      335 
+2 Paracou 6   6.25 Chao1           0      418.
+3 Paracou 6   6.25 iChao1          0      438.
+4 Paracou 6   6.25 Jackknife 2     0      473 
+5 Paracou 6   6.25 Jackknife 1     0      433 </code></pre>
+</div>
+</div>
+</section>
+<section id="interpolation-extrapolation" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="interpolation-extrapolation"><span class="header-section-number">5.3</span> Interpolation / extrapolation</h2>
+<p>Diversity of 1 ha in Paracou.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-23_43f1c2b7da3a776562b7042481cb2a81">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of trees per hectare</span></span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>p6_density <span class="ot">&lt;-</span> <span class="fu">abd_sum</span>(p6_abundances, <span class="at">as_numeric =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fl">6.25</span></span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Richness</span></span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a>p6_abundances <span class="sc">%&gt;%</span> </span>
+<span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">div_richness</span>(<span class="at">level =</span> <span class="fu">round</span>(p6_density))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 6
+  site      weight estimator order level diversity
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;
+1 Paracou 6   6.25 SAC           0   567      159.</code></pre>
+</div>
+</div>
+<p>Diversity of 10 ha in Paracou.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-24_d4802d8b2f72d0518b90eb33b205b678">
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Richness</span></span>
+<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>p6_abundances <span class="sc">%&gt;%</span> </span>
+<span id="cb76-3"><a href="#cb76-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">div_richness</span>(<span class="at">level =</span> <span class="fu">round</span>(<span class="dv">10</span> <span class="sc">*</span> p6_density))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 6
+  site      weight estimator order level diversity
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;
+1 Paracou 6   6.25 jackknife     0  5666      383.</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="shannon" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Shannon</h1>
+<section id="information-function" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="information-function"><span class="header-section-number">6.1</span> Information function</h2>
+<p>Information brought by an individual: <span class="math inline">\(I(p_s) = \ln(1 / p_s)\)</span>.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-25_b348dc66076cdf87445018a9e96cf708">
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Increase the default number of points (101 to 1001) for precision</span></span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun =</span> \(p) {<span class="fu">log</span>(<span class="dv">1</span> <span class="sc">/</span> p)}, <span class="at">n =</span> <span class="dv">1001</span>) <span class="sc">+</span></span>
+<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Probability"</span>, <span class="at">y =</span> <span class="st">"Information"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Information brought by a species: <span class="math inline">\(p_s \ln(1 / p_s)\)</span>.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-26_5556a7afac4a9d6de7357efef898d7f9">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun =</span> \(p) {p <span class="sc">*</span> <span class="fu">log</span>(<span class="dv">1</span> <span class="sc">/</span> p)}, <span class="at">n =</span> <span class="dv">1001</span>) <span class="sc">+</span></span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Probability"</span>, <span class="at">y =</span> <span class="st">"Information"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
+(`geom_function()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="paracou-6-1" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="paracou-6-1"><span class="header-section-number">6.2</span> Paracou 6</h2>
+<p>Estimators.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-27_d7b96433c9dcd72036cfc5104d31a019">
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ent_shannon</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"naive"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">ent_shannon</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"UnveilJ"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">ent_shannon</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"ChaoJost"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb81-4"><a href="#cb81-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>() <span class="ot">-&gt;</span></span>
+<span id="cb81-5"><a href="#cb81-5" aria-hidden="true" tabindex="-1"></a>  p6_shannon</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 5
+  site      weight estimator order entropy
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1 Paracou 6   6.25 naive         1    4.62
+2 Paracou 6   6.25 UnveilJ       1    4.71
+3 Paracou 6   6.25 ChaoJost      1    4.68</code></pre>
+</div>
+</div>
+<p>Effective number of species: <span class="math inline">\(e^H\)</span>.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-28_15b8cd8e8b9c03c4950fce4a21ceea48">
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>p6_shannon <span class="sc">%&gt;%</span> </span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">diversity =</span> <span class="fu">exp</span>(entropy))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 6
+  site      weight estimator order entropy diversity
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
+1 Paracou 6   6.25 naive         1    4.62      101.
+2 Paracou 6   6.25 UnveilJ       1    4.71      111.
+3 Paracou 6   6.25 ChaoJost      1    4.68      108.</code></pre>
+</div>
+</div>
+</section>
+<section id="dummy-communities-1" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="dummy-communities-1"><span class="header-section-number">6.3</span> Dummy communities</h2>
+<p>Compare entropy.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-29_117167cda96ee5c194c2d76f0bfe6983">
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>comm_dummy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+  site   weight  sp_1  sp_2
+  &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 site_1     20    10    10
+2 site_2     21    10    11
+3 site_3   1001  1000     1
+4 site_4   1000  1000     0</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ent_shannon</span>(comm_dummy, <span class="at">estimator =</span> <span class="st">"naive"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 5
+  site   weight estimator      order entropy
+  &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;   &lt;dbl&gt;
+1 site_1     20 naive              1 0.693  
+2 site_2     21 naive              1 0.692  
+3 site_3   1001 naive              1 0.00790
+4 site_4   1000 Single Species     1 0      </code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="simpson" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Simpson</h1>
+<section id="paracou-6-2" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="paracou-6-2"><span class="header-section-number">7.1</span> Paracou 6</h2>
+<p>Estimators.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-30_1d0bc614a1394dd844dd00b7841947f0">
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ent_simpson</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"naive"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">ent_simpson</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"Lande"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb89-3"><a href="#cb89-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">ent_simpson</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"UnveilJ"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb89-4"><a href="#cb89-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">ent_simpson</span>(p6_abundances, <span class="at">estimator =</span> <span class="st">"ChaoJost"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb89-5"><a href="#cb89-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>() <span class="ot">-&gt;</span></span>
+<span id="cb89-6"><a href="#cb89-6" aria-hidden="true" tabindex="-1"></a>  p6_simpson</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 5
+  site      weight estimator order entropy
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1 Paracou 6   6.25 naive         2   0.978
+2 Paracou 6   6.25 Lande         2   0.979
+3 Paracou 6   6.25 UnveilJ       2   0.979
+4 Paracou 6   6.25 ChaoJost      2   0.979</code></pre>
+</div>
+</div>
+<p>Effective number of species: <span class="math inline">\(1 / (1 - E)\)</span>.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-31_2ad1b50ffc41b63e352a3da84def207b">
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a>p6_simpson <span class="sc">%&gt;%</span> </span>
+<span id="cb91-2"><a href="#cb91-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">diversity =</span> <span class="dv">1</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> entropy))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 6
+  site      weight estimator order entropy diversity
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
+1 Paracou 6   6.25 naive         2   0.978      45.9
+2 Paracou 6   6.25 Lande         2   0.979      46.5
+3 Paracou 6   6.25 UnveilJ       2   0.979      46.5
+4 Paracou 6   6.25 ChaoJost      2   0.979      46.5</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="generalized-entropy" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Generalized entropy</h1>
+<section id="information" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="information"><span class="header-section-number">8.1</span> Information</h2>
+<p>Information brought by an individual: <span class="math inline">\(I(p_s) = \ln_q(1 / p_s)\)</span>.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-32_18242ef1c7b8936d05287c09ccd1bb60">
+<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb93-2"><a href="#cb93-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Increase the default number of points (101 to 1001) for precision</span></span>
+<span id="cb93-3"><a href="#cb93-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun =</span> \(p) {<span class="fu">ln_q</span>(<span class="dv">1</span> <span class="sc">/</span> p, <span class="at">q =</span> <span class="dv">0</span>)}, <span class="at">n =</span> <span class="dv">1001</span>, <span class="fu">aes</span>(<span class="at">color =</span> <span class="st">"0"</span>)) <span class="sc">+</span> </span>
+<span id="cb93-4"><a href="#cb93-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun =</span> \(p) {<span class="fu">ln_q</span>(<span class="dv">1</span> <span class="sc">/</span> p, <span class="at">q =</span> <span class="dv">1</span>)}, <span class="at">n =</span> <span class="dv">1001</span>, <span class="fu">aes</span>(<span class="at">color =</span> <span class="st">"1"</span>)) <span class="sc">+</span> </span>
+<span id="cb93-5"><a href="#cb93-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun =</span> \(p) {<span class="fu">ln_q</span>(<span class="dv">1</span> <span class="sc">/</span> p, <span class="at">q =</span> <span class="dv">2</span>)}, <span class="at">n =</span> <span class="dv">1001</span>, <span class="fu">aes</span>(<span class="at">color =</span> <span class="st">"2"</span>)) <span class="sc">+</span></span>
+<span id="cb93-6"><a href="#cb93-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb93-7"><a href="#cb93-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Probability"</span>, <span class="at">y =</span> <span class="st">"Information"</span>, <span class="at">color =</span> <span class="st">"q"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-32-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Information brought by a species: <span class="math inline">\(p_s \ln_q(1 / p_s)\)</span>.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-33_742ae8a2b7883c3dda3d61d69c279956">
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb94-2"><a href="#cb94-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Increase the default number of points (101 to 1001) for precision</span></span>
+<span id="cb94-3"><a href="#cb94-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun =</span> \(p) {p <span class="sc">*</span> <span class="fu">ln_q</span>(<span class="dv">1</span> <span class="sc">/</span> p, <span class="at">q =</span> <span class="dv">0</span>)}, <span class="at">n =</span> <span class="dv">1001</span>, <span class="fu">aes</span>(<span class="at">color =</span> <span class="st">"0"</span>)) <span class="sc">+</span> </span>
+<span id="cb94-4"><a href="#cb94-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun =</span> \(p) {p <span class="sc">*</span> <span class="fu">ln_q</span>(<span class="dv">1</span> <span class="sc">/</span> p, <span class="at">q =</span> <span class="dv">1</span>)}, <span class="at">n =</span> <span class="dv">1001</span>, <span class="fu">aes</span>(<span class="at">color =</span> <span class="st">"1"</span>)) <span class="sc">+</span> </span>
+<span id="cb94-5"><a href="#cb94-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun =</span> \(p) {p <span class="sc">*</span> <span class="fu">ln_q</span>(<span class="dv">1</span> <span class="sc">/</span> p, <span class="at">q =</span> <span class="dv">2</span>)}, <span class="at">n =</span> <span class="dv">1001</span>, <span class="fu">aes</span>(<span class="at">color =</span> <span class="st">"2"</span>)) <span class="sc">+</span></span>
+<span id="cb94-6"><a href="#cb94-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Probability"</span>, <span class="at">y =</span> <span class="st">"Information"</span>, <span class="at">color  =</span> <span class="st">"q"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
+(`geom_function()`).
+Removed 1 row containing missing values or values outside the scale range
+(`geom_function()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-33-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="paracou-6-3" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="paracou-6-3"><span class="header-section-number">8.2</span> Paracou 6</h2>
+<p>Diversity profile.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-34_c6f8f53a81d06fe8b67cca70c31f3b6b">
+<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a>p6_abundances <span class="sc">%&gt;%</span> </span>
+<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">profile_hill</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>() <span class="sc">+</span></span>
+<span id="cb96-4"><a href="#cb96-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Don't print the legend</span></span>
+<span id="cb96-5"><a href="#cb96-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-34-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Compare estimators.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-35_54c00541c8f61a28c7472b1c8365c3f6">
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>p6_abundances <span class="sc">%&gt;%</span> </span>
+<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">profile_hill</span>(<span class="at">estimator =</span> <span class="st">"UnveilJ"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb97-3"><a href="#cb97-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Use the site name to store the estimator's name</span></span>
+<span id="cb97-4"><a href="#cb97-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">site =</span> <span class="st">"UnveilJ"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb97-5"><a href="#cb97-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(</span>
+<span id="cb97-6"><a href="#cb97-6" aria-hidden="true" tabindex="-1"></a>    p6_abundances <span class="sc">%&gt;%</span> </span>
+<span id="cb97-7"><a href="#cb97-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">profile_hill</span>(<span class="at">estimator =</span> <span class="st">"ChaoJost"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb97-8"><a href="#cb97-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">site =</span> <span class="st">"ChaoJost"</span>)</span>
+<span id="cb97-9"><a href="#cb97-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb97-10"><a href="#cb97-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(</span>
+<span id="cb97-11"><a href="#cb97-11" aria-hidden="true" tabindex="-1"></a>    p6_abundances <span class="sc">%&gt;%</span> </span>
+<span id="cb97-12"><a href="#cb97-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">profile_hill</span>(<span class="at">estimator =</span> <span class="st">"naive"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb97-13"><a href="#cb97-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">site =</span> <span class="st">"naive"</span>)</span>
+<span id="cb97-14"><a href="#cb97-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb97-15"><a href="#cb97-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>() <span class="sc">+</span></span>
+<span id="cb97-16"><a href="#cb97-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">color  =</span> <span class="st">"Estimator"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-35-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Extreme values.</p>
+<p>The reciprocal of the Berger-Parker index <span class="citation" data-cites="Berger1970">(<a href="#ref-Berger1970" role="doc-biblioref">Berger and Parker 1970</a>)</span> is the rarity of the most abundant species <span class="math inline">\(^{+\infty}D\)</span>.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-36_c6e31efdf3d90d9701538336ae4808c3">
+<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="co"># q = 1000 is enough for infinity</span></span>
+<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a><span class="fu">div_hill</span>(p6_abundances, <span class="at">q =</span> <span class="dv">1000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 5
+  site      weight estimator order diversity
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+1 Paracou 6   6.25 UnveilJ    1000      13.3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb100"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare to </span></span>
+<span id="cb100-2"><a href="#cb100-2" aria-hidden="true" tabindex="-1"></a>p6_abundances <span class="sc">%&gt;%</span> </span>
+<span id="cb100-3"><a href="#cb100-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Extract proobabilities</span></span>
+<span id="cb100-4"><a href="#cb100-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_probabilities</span>(<span class="at">as_numeric =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb100-5"><a href="#cb100-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Max value</span></span>
+<span id="cb100-6"><a href="#cb100-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">max</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb100-7"><a href="#cb100-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Reciprocal</span></span>
+<span id="cb100-8"><a href="#cb100-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">^</span><span class="st">`</span>(<span class="sc">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 13.31203</code></pre>
+</div>
+</div>
+</section>
+<section id="dummy-communities-2" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="dummy-communities-2"><span class="header-section-number">8.3</span> Dummy communities</h2>
+<p>Compare diversity</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-37_7119f210afe3b8c0375722fafc5bc75a">
+<div class="sourceCode cell-code" id="cb102"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a>comm_dummy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+  site   weight  sp_1  sp_2
+  &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 site_1     20    10    10
+2 site_2     21    10    11
+3 site_3   1001  1000     1
+4 site_4   1000  1000     0</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb104"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="fu">div_hill</span>(comm_dummy, <span class="at">q =</span> <span class="dv">1</span>, <span class="at">estimator =</span> <span class="st">"naive"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 5
+  site   weight estimator      order diversity
+  &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;
+1 site_1     20 naive              1      2   
+2 site_2     21 naive              1      2.00
+3 site_3   1001 naive              1      1.01
+4 site_4   1000 Single Species     1      1   </code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="comparing-diversity" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Comparing diversity</h1>
+<section id="asymptotic-diversity" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="asymptotic-diversity"><span class="header-section-number">9.1</span> Asymptotic diversity</h2>
+<p>Compare asymptotic diversity of Paracou and BCI, extend <span class="math inline">\(q\)</span>.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-38_75bf307ff19e2aafd14be02b37c1de94">
+<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Orders from 0 to 4</span></span>
+<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a>q_seq_0_4 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">0</span>, <span class="at">to =</span> <span class="dv">4</span>, <span class="at">by =</span> <span class="fl">0.1</span>)</span>
+<span id="cb106-3"><a href="#cb106-3" aria-hidden="true" tabindex="-1"></a><span class="fu">profile_hill</span>(p6_abundances, <span class="at">orders =</span> q_seq_0_4) <span class="sc">%&gt;%</span> </span>
+<span id="cb106-4"><a href="#cb106-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">profile_hill</span>(BCI_all, <span class="at">orders =</span> q_seq_0_4)) <span class="sc">%&gt;%</span> </span>
+<span id="cb106-5"><a href="#cb106-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-38-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="standardized-diversity" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="standardized-diversity"><span class="header-section-number">9.2</span> Standardized diversity</h2>
+<p>The sampling effort is very different: 50 ha in BCI, 6.25 ha in Paracou. The asymptotic estimation is less reliable in Paracou.</p>
+<p>Compare diversity at the same sampling effort, say 10 ha.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-39_0d55ba99daae30612fc1f18bff5826ee">
+<div class="sourceCode cell-code" id="cb107"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of trees in 10 ha</span></span>
+<span id="cb107-2"><a href="#cb107-2" aria-hidden="true" tabindex="-1"></a>p6_n_10ha <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">abd_sum</span>(p6_abundances, <span class="at">as_numeric =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fl">6.25</span> <span class="sc">*</span> <span class="dv">10</span>)</span>
+<span id="cb107-3"><a href="#cb107-3" aria-hidden="true" tabindex="-1"></a>BCI_n_10_ha <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">sum</span>(BCI_all) <span class="sc">/</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Compare diversity of 10 ha.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-40_d19207412fc0bbea85220aa4a0d90f29">
+<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">profile_hill</span>(p6_abundances, <span class="at">level =</span> p6_n_10ha) <span class="sc">%&gt;%</span> </span>
+<span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">profile_hill</span>(BCI_all, <span class="at">level =</span> BCI_n_10_ha)) <span class="sc">%&gt;%</span> </span>
+<span id="cb108-3"><a href="#cb108-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-40-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="sample-coverage" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="sample-coverage"><span class="header-section-number">9.3</span> Sample coverage</h2>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-41_3e295cea7b14ca1cf505fbbdb2117056">
+<div class="sourceCode cell-code" id="cb109"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="fu">coverage</span>(p6_abundances) <span class="sc">%&gt;%</span> </span>
+<span id="cb109-2"><a href="#cb109-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">coverage</span>(BCI_all))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 4
+  site      weight estimator  coverage
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt;
+1 Paracou 6   6.25 ZhangHuang    0.972
+2 BCI        50    ZhangHuang    0.999</code></pre>
+</div>
+</div>
+<p>Compare diversity at the same sample coverage <span class="citation" data-cites="Chao2012b">(<a href="#ref-Chao2012b" role="doc-biblioref">Chao and Jost 2012</a>)</span>, that of Paracou.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-42_a5d747b29753036c0dab3d1de69afaad">
+<div class="sourceCode cell-code" id="cb111"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a>reference_coverage <span class="ot">&lt;-</span> <span class="fu">coverage</span>(p6_abundances, <span class="at">as_numeric =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb111-2"><a href="#cb111-2" aria-hidden="true" tabindex="-1"></a><span class="fu">profile_hill</span>(p6_abundances, <span class="at">level =</span> reference_coverage) <span class="sc">%&gt;%</span> </span>
+<span id="cb111-3"><a href="#cb111-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">profile_hill</span>(BCI_all, <span class="at">level =</span> reference_coverage)) <span class="sc">%&gt;%</span> </span>
+<span id="cb111-4"><a href="#cb111-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-42-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="phylogenetic-diversity" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Phylogenetic diversity</h1>
+<section id="mock-data" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="mock-data"><span class="header-section-number">10.1</span> Mock data</h2>
+<p>A simple community with 3 species.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-43_dbdaced9f3069b87c9a04b8daea1322b">
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a>mock_3sp_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_abundances</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb112-3"><a href="#cb112-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">site =</span> <span class="st">"Mock 3 species"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb112-4"><a href="#cb112-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>() <span class="ot">-&gt;</span></span>
+<span id="cb112-5"><a href="#cb112-5" aria-hidden="true" tabindex="-1"></a>  mock_3sp_abundances</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 5
+  site           weight     A     B     C
+  &lt;chr&gt;           &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 Mock 3 species      6     3     2     1</code></pre>
+</div>
+</div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-44_4a90e5466a34ae9d233364df3e50bca9">
+<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"ape"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attachement du package : 'ape'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>L'objet suivant est masqué depuis 'package:dplyr':
+
+    where</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb117"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare the tree for convenience: make the branches twice longer</span></span>
+<span id="cb117-2"><a href="#cb117-2" aria-hidden="true" tabindex="-1"></a>mock_3sp_tree<span class="sc">$</span>edge.length <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> mock_3sp_tree<span class="sc">$</span>edge.length</span>
+<span id="cb117-3"><a href="#cb117-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mock_3sp_tree, <span class="at">direction =</span> <span class="st">"downwards"</span>, <span class="at">srt =</span> <span class="dv">90</span>)</span>
+<span id="cb117-4"><a href="#cb117-4" aria-hidden="true" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-44-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>PD is the total length of branches</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-45_2457cdbf7b70dd657006e589379f587b">
+<div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">div_pd</span>(mock_3sp_abd, <span class="at">tree =</span> mock_3sp_tree)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  estimator order diversity
+  &lt;chr&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+1 naive         0         5</code></pre>
+</div>
+</div>
+<p>Rao.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-46_772171df6506650627971586cb9b5572">
+<div class="sourceCode cell-code" id="cb120"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ent_rao</span>(mock_3sp_abundances, <span class="at">tree =</span> mock_3sp_tree, <span class="at">estimator =</span> <span class="st">"naive"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 5
+  site           weight estimator order entropy
+  &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1 Mock 3 species      6 naive         2   0.528</code></pre>
+</div>
+</div>
+<p>The tree is normalized to height = 1 by default. Without normalization:</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-47_3524c3f1f6a65614ded6072adb8cb25e">
+<div class="sourceCode cell-code" id="cb122"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb122-1"><a href="#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ent_rao</span>(</span>
+<span id="cb122-2"><a href="#cb122-2" aria-hidden="true" tabindex="-1"></a>  mock_3sp_abundances, </span>
+<span id="cb122-3"><a href="#cb122-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">tree =</span> mock_3sp_tree, </span>
+<span id="cb122-4"><a href="#cb122-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">estimator =</span> <span class="st">"naive"</span>, </span>
+<span id="cb122-5"><a href="#cb122-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">normalize =</span> <span class="cn">FALSE</span></span>
+<span id="cb122-6"><a href="#cb122-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 5
+  site           weight estimator order entropy
+  &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1 Mock 3 species      6 naive         2    1.06</code></pre>
+</div>
+</div>
+</section>
+<section id="paracou-6-4" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="paracou-6-4"><span class="header-section-number">10.2</span> Paracou 6</h2>
+<p><code>paracou_6_taxo</code> is a taxonomic tree: distance is 1 between species of the same genus, 2 between genera of the same family, 3 between families.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-48_5c30d6837214b3c461f5489fe3d05372">
+<div class="sourceCode cell-code" id="cb124"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb124-1"><a href="#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(paracou_6_taxo, <span class="at">type =</span> <span class="st">"fan"</span>, <span class="at">show.tip.label =</span> <span class="cn">FALSE</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-48-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Calculate Rao’s entropy and phylogenetic entropy of order 2</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-49_9c048d0eaecde5a0ff60925e22ddff8f">
+<div class="sourceCode cell-code" id="cb125"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb125-1"><a href="#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ent_rao</span>(p6_abundances, <span class="at">tree =</span> paracou_6_taxo) <span class="sc">%&gt;%</span> </span>
+<span id="cb125-2"><a href="#cb125-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(</span>
+<span id="cb125-3"><a href="#cb125-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ent_phylo</span>(p6_abundances, <span class="at">tree =</span> paracou_6_taxo, <span class="at">q =</span> <span class="dv">2</span>)</span>
+<span id="cb125-4"><a href="#cb125-4" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 6
+  site      weight estimator order entropy     q
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;
+1 Paracou 6   6.25 Lande         2   0.976    NA
+2 Paracou 6   6.25 UnveilJ      NA   0.949     2</code></pre>
+</div>
+</div>
+<p>Rao’s entropy is not an effective number of species, but the average phylogenetic distance between two individuals. The corresponding Hill number is:</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-50_7beebf7fab9f8eccb953e4c29cc5ede2">
+<div class="sourceCode cell-code" id="cb127"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb127-1"><a href="#cb127-1" aria-hidden="true" tabindex="-1"></a><span class="fu">div_phylo</span>(p6_abundances, <span class="at">tree =</span> paracou_6_taxo, <span class="at">q =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 4
+  site      weight estimator diversity
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt;
+1 Paracou 6   6.25 UnveilJ        19.5</code></pre>
+</div>
+</div>
+<p>Diversity profile</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-51_29bd03a37570494834a48129bdf945e7">
+<div class="sourceCode cell-code" id="cb129"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb129-1"><a href="#cb129-1" aria-hidden="true" tabindex="-1"></a><span class="fu">profile_phylo</span>(p6_abundances, <span class="at">tree =</span> paracou_6_taxo) <span class="sc">%&gt;%</span> </span>
+<span id="cb129-2"><a href="#cb129-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-51-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="functional-diversity" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Functional diversity</h1>
+<section id="mock-data-1" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="mock-data-1"><span class="header-section-number">11.1</span> Mock data</h2>
+<p>The same mock data is used. Distances between species is now assumed to be in the trait space. Distances between species.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-52_1e1ae765d71e0fac00d0a06937af8894">
+<div class="sourceCode cell-code" id="cb130"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb130-1"><a href="#cb130-1" aria-hidden="true" tabindex="-1"></a>mock_3sp_dist</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  A B
+B 1  
+C 2 2</code></pre>
+</div>
+</div>
+<p>Plot the trait space.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-53_638f87ac069a5bd30858b33ef15dba3e">
+<div class="sourceCode cell-code" id="cb132"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb132-1"><a href="#cb132-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"ade4"</span>)</span>
+<span id="cb132-2"><a href="#cb132-2" aria-hidden="true" tabindex="-1"></a>mock_pcoa <span class="ot">&lt;-</span> <span class="fu">dudi.pco</span>(mock_3sp_dist, <span class="at">scannf =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb132-3"><a href="#cb132-3" aria-hidden="true" tabindex="-1"></a><span class="fu">scatter</span>(mock_pcoa, <span class="at">posieig =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-53-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>NULL</code></pre>
+</div>
+</div>
+<p>Similarity between species.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-54_6f8bb3ead7e8b6f0979157286bbb0a0f">
+<div class="sourceCode cell-code" id="cb134"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb134-1"><a href="#cb134-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The dist object must be converted to a matrix</span></span>
+<span id="cb134-2"><a href="#cb134-2" aria-hidden="true" tabindex="-1"></a>mock_3sp_Z <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">as.matrix</span>(mock_3sp_dist) <span class="sc">/</span> <span class="fu">max</span>(mock_3sp_dist)</span>
+<span id="cb134-3"><a href="#cb134-3" aria-hidden="true" tabindex="-1"></a>mock_3sp_Z</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    A   B C
+A 1.0 0.5 0
+B 0.5 1.0 0
+C 0.0 0.0 1</code></pre>
+</div>
+</div>
+<p>Ordinariness.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-55_720a821db807a05f29225490673c4f33">
+<div class="sourceCode cell-code" id="cb136"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb136-1"><a href="#cb136-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Probabilities of species</span></span>
+<span id="cb136-2"><a href="#cb136-2" aria-hidden="true" tabindex="-1"></a>mock_3sp_prob <span class="ot">&lt;-</span> mock_3sp_abd <span class="sc">/</span> <span class="fu">sum</span>(mock_3sp_abd)</span>
+<span id="cb136-3"><a href="#cb136-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Ordinariness of species</span></span>
+<span id="cb136-4"><a href="#cb136-4" aria-hidden="true" tabindex="-1"></a>mock_3sp_O <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(mock_3sp_Z <span class="sc">%*%</span> mock_3sp_prob)</span>
+<span id="cb136-5"><a href="#cb136-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare probabilities and ordinariness</span></span>
+<span id="cb136-6"><a href="#cb136-6" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(</span>
+<span id="cb136-7"><a href="#cb136-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">Probability =</span> mock_3sp_prob,</span>
+<span id="cb136-8"><a href="#cb136-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">Rarity_p =</span> <span class="dv">1</span> <span class="sc">/</span> mock_3sp_prob,</span>
+<span id="cb136-9"><a href="#cb136-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">Ordinariness =</span> mock_3sp_O,</span>
+<span id="cb136-10"><a href="#cb136-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">Rarity_0 =</span> <span class="dv">1</span> <span class="sc">/</span> mock_3sp_O</span>
+<span id="cb136-11"><a href="#cb136-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 4
+  Probability Rarity_p Ordinariness Rarity_0
+        &lt;dbl&gt;    &lt;dbl&gt;        &lt;dbl&gt;    &lt;dbl&gt;
+1       0.5          2        0.667     1.5 
+2       0.333        3        0.583     1.71
+3       0.167        6        0.167     6   </code></pre>
+</div>
+</div>
+<p>Diversity.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-56_15b8c4620ac6e8bc7079bcabadf413a2">
+<div class="sourceCode cell-code" id="cb138"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb138-1"><a href="#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="fu">profile_similarity</span>(</span>
+<span id="cb138-2"><a href="#cb138-2" aria-hidden="true" tabindex="-1"></a>  mock_3sp_abundances, </span>
+<span id="cb138-3"><a href="#cb138-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">similarities =</span> mock_3sp_Z, </span>
+<span id="cb138-4"><a href="#cb138-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">estimator =</span> <span class="st">"naive"</span></span>
+<span id="cb138-5"><a href="#cb138-5" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb138-6"><a href="#cb138-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-56-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Diversity of order 2 (i.e.&nbsp;Rao’s).</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-57_d7e660c6dbdada02108b697f3e2eb6d1">
+<div class="sourceCode cell-code" id="cb139"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb139-1"><a href="#cb139-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ent_similarity</span>(</span>
+<span id="cb139-2"><a href="#cb139-2" aria-hidden="true" tabindex="-1"></a>  mock_3sp_abundances, </span>
+<span id="cb139-3"><a href="#cb139-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">similarities =</span> mock_3sp_Z, </span>
+<span id="cb139-4"><a href="#cb139-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">q =</span> <span class="dv">2</span>, </span>
+<span id="cb139-5"><a href="#cb139-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">estimator =</span> <span class="st">"naive"</span></span>
+<span id="cb139-6"><a href="#cb139-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 5
+  site           weight estimator order entropy
+  &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1 Mock 3 species      6 naive         2   0.444</code></pre>
+</div>
+</div>
+</section>
+<section id="paracou-6-5" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="paracou-6-5"><span class="header-section-number">11.2</span> Paracou 6</h2>
+<p>The species traits are maximum height (95<sup>th</sup> percentile) and seed mass, maximum height (95<sup>th</sup> percentile) and seed mass. A distance matrix was built (see home practical). Distribution of distances between species.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-58_33fba4bdee87b87ba819f5d9c5f40ec7">
+<div class="sourceCode cell-code" id="cb141"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb141-1"><a href="#cb141-1" aria-hidden="true" tabindex="-1"></a>paracou_6_fundist <span class="sc">%&gt;%</span> </span>
+<span id="cb141-2"><a href="#cb141-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.numeric</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb141-3"><a href="#cb141-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">Distance =</span> .) <span class="sc">%&gt;%</span> </span>
+<span id="cb141-4"><a href="#cb141-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb141-5"><a href="#cb141-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x =</span> Distance))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-58-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Diversity profile.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-59_e032993aec849340436eacbcea0311dd">
+<div class="sourceCode cell-code" id="cb142"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb142-1"><a href="#cb142-1" aria-hidden="true" tabindex="-1"></a>p6_abundances <span class="sc">%&gt;%</span> </span>
+<span id="cb142-2"><a href="#cb142-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">profile_similarity</span>(</span>
+<span id="cb142-3"><a href="#cb142-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">similarities =</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">as.matrix</span>(paracou_6_fundist) <span class="sc">/</span> <span class="fu">max</span>(paracou_6_fundist)</span>
+<span id="cb142-4"><a href="#cb142-4" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb142-5"><a href="#cb142-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-59-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="intraspecific-variability" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="intraspecific-variability"><span class="header-section-number">11.3</span> Intraspecific variability</h2>
+<p>Coordinates of species A, B and C in the trait space.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-60_3a0d81a28dbbd829d12e4ce6bfe63938">
+<div class="sourceCode cell-code" id="cb143"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb143-1"><a href="#cb143-1" aria-hidden="true" tabindex="-1"></a>mock_pcoa<span class="sc">$</span>li</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          A1            A2
+A -0.6454972  5.000000e-01
+B -0.6454972 -5.000000e-01
+C  1.2909944  2.355139e-16</code></pre>
+</div>
+</div>
+<p>Plot individuals in the trait space, with a small variability.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-61_a574d00f64b730a2e9a7b12d6c3ac301">
+<div class="sourceCode cell-code" id="cb145"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb145-1"><a href="#cb145-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create coordinates</span></span>
+<span id="cb145-2"><a href="#cb145-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(</span>
+<span id="cb145-3"><a href="#cb145-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Species =</span> <span class="fu">rep</span>(<span class="fu">names</span>(mock_3sp_abd), <span class="at">times =</span> mock_3sp_abd),</span>
+<span id="cb145-4"><a href="#cb145-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="fu">rep</span>(mock_pcoa<span class="sc">$</span>li[, <span class="dv">1</span>], <span class="at">times =</span> mock_3sp_abd),</span>
+<span id="cb145-5"><a href="#cb145-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="fu">rep</span>(mock_pcoa<span class="sc">$</span>li[, <span class="dv">2</span>], <span class="at">times =</span> mock_3sp_abd)</span>
+<span id="cb145-6"><a href="#cb145-6" aria-hidden="true" tabindex="-1"></a>) <span class="ot">-&gt;</span></span>
+<span id="cb145-7"><a href="#cb145-7" aria-hidden="true" tabindex="-1"></a>  mock_3sp_ind</span>
+<span id="cb145-8"><a href="#cb145-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Choose variability</span></span>
+<span id="cb145-9"><a href="#cb145-9" aria-hidden="true" tabindex="-1"></a>variability <span class="ot">&lt;-</span> <span class="fl">0.1</span></span>
+<span id="cb145-10"><a href="#cb145-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Map</span></span>
+<span id="cb145-11"><a href="#cb145-11" aria-hidden="true" tabindex="-1"></a>mock_3sp_ind <span class="sc">%&gt;%</span> </span>
+<span id="cb145-12"><a href="#cb145-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add variability</span></span>
+<span id="cb145-13"><a href="#cb145-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb145-14"><a href="#cb145-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">n</span>(), <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> variability),</span>
+<span id="cb145-15"><a href="#cb145-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> y <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">n</span>(), <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> variability)</span>
+<span id="cb145-16"><a href="#cb145-16" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb145-17"><a href="#cb145-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">color =</span> Species)) <span class="sc">+</span></span>
+<span id="cb145-18"><a href="#cb145-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb145-19"><a href="#cb145-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_fixed</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-61-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Diversity of the 6 individuals. First, without variability.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-62_c156c8a0f7cc07d20bc0a17e14a393bc">
+<div class="sourceCode cell-code" id="cb146"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb146-1"><a href="#cb146-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Choose variability</span></span>
+<span id="cb146-2"><a href="#cb146-2" aria-hidden="true" tabindex="-1"></a>variability <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb146-3"><a href="#cb146-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the point set</span></span>
+<span id="cb146-4"><a href="#cb146-4" aria-hidden="true" tabindex="-1"></a>mock_3sp_ind <span class="sc">%&gt;%</span> </span>
+<span id="cb146-5"><a href="#cb146-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add variability</span></span>
+<span id="cb146-6"><a href="#cb146-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb146-7"><a href="#cb146-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">n</span>(), <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> variability),</span>
+<span id="cb146-8"><a href="#cb146-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> y <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">n</span>(), <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> variability)</span>
+<span id="cb146-9"><a href="#cb146-9" aria-hidden="true" tabindex="-1"></a>  )  <span class="sc">%&gt;%</span> </span>
+<span id="cb146-10"><a href="#cb146-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Distance matrix</span></span>
+<span id="cb146-11"><a href="#cb146-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dist</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb146-12"><a href="#cb146-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.matrix</span>() <span class="ot">-&gt;</span></span>
+<span id="cb146-13"><a href="#cb146-13" aria-hidden="true" tabindex="-1"></a>  mock_6ind_dist</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in dist(.): NAs introduits lors de la conversion automatique</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb148"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb148-1"><a href="#cb148-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Delete the row and column name of the matrix (they are not species names)</span></span>
+<span id="cb148-2"><a href="#cb148-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(mock_6ind_dist) <span class="ot">&lt;-</span> <span class="fu">colnames</span>(mock_6ind_dist) <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb148-3"><a href="#cb148-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Total abundance</span></span>
+<span id="cb148-4"><a href="#cb148-4" aria-hidden="true" tabindex="-1"></a>mock_6ind_n <span class="ot">&lt;-</span> <span class="fu">nrow</span>(mock_6ind_dist)</span>
+<span id="cb148-5"><a href="#cb148-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Similarity</span></span>
+<span id="cb148-6"><a href="#cb148-6" aria-hidden="true" tabindex="-1"></a>mock_6ind_Z <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> mock_6ind_dist <span class="sc">/</span> <span class="fu">max</span>(mock_6ind_dist)</span>
+<span id="cb148-7"><a href="#cb148-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Abundances of individuals are 1, or any identical value</span></span>
+<span id="cb148-8"><a href="#cb148-8" aria-hidden="true" tabindex="-1"></a>mock_6ind_abd <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">1</span>, mock_6ind_n)</span>
+<span id="cb148-9"><a href="#cb148-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Diversity</span></span>
+<span id="cb148-10"><a href="#cb148-10" aria-hidden="true" tabindex="-1"></a><span class="fu">profile_similarity</span>(</span>
+<span id="cb148-11"><a href="#cb148-11" aria-hidden="true" tabindex="-1"></a>  mock_6ind_abd, </span>
+<span id="cb148-12"><a href="#cb148-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">similarities =</span> mock_6ind_Z,</span>
+<span id="cb148-13"><a href="#cb148-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">estimator =</span> <span class="st">"naive"</span></span>
+<span id="cb148-14"><a href="#cb148-14" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb148-15"><a href="#cb148-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.
+! Sample coverage is 0, most estimators will return `NaN`.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-62-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Change the variability (0.1 first) and run the code again.</p>
+</section>
+</section>
+<section id="diversity-partitioning" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Diversity partitioning</h1>
+<section id="mock-data-2" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="mock-data-2"><span class="header-section-number">12.1</span> Mock data</h2>
+<p>Three habitats: A, B, C.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-63_0c785fe9daeb7f122a9b878aeeb24637">
+<div class="sourceCode cell-code" id="cb150"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb150-1"><a href="#cb150-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(</span>
+<span id="cb150-2"><a href="#cb150-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(</span>
+<span id="cb150-3"><a href="#cb150-3" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>,</span>
+<span id="cb150-4"><a href="#cb150-4" aria-hidden="true" tabindex="-1"></a>    <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">0</span>,</span>
+<span id="cb150-5"><a href="#cb150-5" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span></span>
+<span id="cb150-6"><a href="#cb150-6" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb150-7"><a href="#cb150-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">nrow =</span> <span class="dv">3</span>, </span>
+<span id="cb150-8"><a href="#cb150-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">byrow =</span> <span class="cn">TRUE</span></span>
+<span id="cb150-9"><a href="#cb150-9" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb150-10"><a href="#cb150-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_abundances</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb150-11"><a href="#cb150-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb150-12"><a href="#cb150-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">site =</span> <span class="fu">paste</span>(<span class="st">"Habitat"</span>, LETTERS[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]),</span>
+<span id="cb150-13"><a href="#cb150-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">weight =</span> <span class="dv">1</span></span>
+<span id="cb150-14"><a href="#cb150-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="ot">-&gt;</span></span>
+<span id="cb150-15"><a href="#cb150-15" aria-hidden="true" tabindex="-1"></a>  mock_island_abd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Richness.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-64_c2fb8204b99a8e99522c03e8b9dc1519">
+<div class="sourceCode cell-code" id="cb151"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb151-1"><a href="#cb151-1" aria-hidden="true" tabindex="-1"></a><span class="fu">div_richness</span>(mock_island_abd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 5
+  site      weight estimator   order diversity
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt;     &lt;int&gt;
+1 Habitat A      1 Jackknife 0     0         5
+2 Habitat B      1 Jackknife 0     0         7
+3 Habitat C      1 Jackknife 0     0         3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb153"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb153-1"><a href="#cb153-1" aria-hidden="true" tabindex="-1"></a><span class="fu">div_richness</span>(mock_island_abd, <span class="at">gamma =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 4
+  site          estimator   order diversity
+  &lt;chr&gt;         &lt;chr&gt;       &lt;dbl&gt;     &lt;dbl&gt;
+1 Metacommunity Jackknife 2     0        10</code></pre>
+</div>
+</div>
+<p>Multiplicative partitioning: 10 effective species (<span class="math inline">\(\gamma\)</span>) = 5 effective species per habitat (<span class="math inline">\(\alpha\)</span>) times 2 habitats (<span class="math inline">\(\beta\)</span>).</p>
+<p>estimator = “naive” si des 1 dans la matrice</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-65_dca1e8930982ab086bbfe443ddd6fba1">
+<div class="sourceCode cell-code" id="cb155"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb155-1"><a href="#cb155-1" aria-hidden="true" tabindex="-1"></a><span class="fu">div_part</span>(mock_island_abd, <span class="at">q =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 6
+  site          scale     estimator order diversity weight
+  &lt;chr&gt;         &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt;     &lt;dbl&gt;  &lt;dbl&gt;
+1 Metacommunity gamma     "UnveilJ"     0        10      3
+2 Metacommunity beta      ""            0         2     NA
+3 Metacommunity alpha     ""            0         5     NA
+4 Habitat A     community "UnveilJ"     0         5      1
+5 Habitat B     community "UnveilJ"     0         7      1
+6 Habitat C     community "UnveilJ"     0         3      1</code></pre>
+</div>
+</div>
+<p>Additive partitioning: 10 effective species (<span class="math inline">\(\gamma\)</span>) = 5 effective species per habitat (<span class="math inline">\(\alpha\)</span>) + 5 more species (<span class="math inline">\(\beta\)</span>).</p>
+</section>
+<section id="paracou-6-6" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="paracou-6-6"><span class="header-section-number">12.2</span> Paracou 6</h2>
+<p>The plot is made of 4 , subplots.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-66_8c648b283fda5b64ab91ecfff2ff6f15">
+<div class="sourceCode cell-code" id="cb157"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb157-1"><a href="#cb157-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Diversity profiles of the 4 subplots</span></span>
+<span id="cb157-2"><a href="#cb157-2" aria-hidden="true" tabindex="-1"></a>paracou_6_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb157-3"><a href="#cb157-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">profile_hill</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb157-4"><a href="#cb157-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-66-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<section id="partitioning" class="level3" data-number="12.2.1">
+<h3 data-number="12.2.1" class="anchored" data-anchor-id="partitioning"><span class="header-section-number">12.2.1</span> Partitioning</h3>
+<p>Function <code>div_part()</code> computes <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span> and <span class="math inline">\(\gamma\)</span> diversity.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-67_0dac6c229bb8e4f16a53a4b20db43912">
+<div class="sourceCode cell-code" id="cb158"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb158-1"><a href="#cb158-1" aria-hidden="true" tabindex="-1"></a><span class="fu">div_part</span>(paracou_6_abd, <span class="at">q =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 7 × 6
+  site          scale     estimator order diversity weight
+  &lt;chr&gt;         &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt;     &lt;dbl&gt;  &lt;dbl&gt;
+1 Metacommunity gamma     "UnveilJ"     1    111.     6.25
+2 Metacommunity beta      ""            1      1.09  NA   
+3 Metacommunity alpha     ""            1    102.    NA   
+4 subplot_1     community "UnveilJ"     1     96.3    1.56
+5 subplot_2     community "UnveilJ"     1    113.     1.56
+6 subplot_3     community "UnveilJ"     1    105.     1.56
+7 subplot_4     community "UnveilJ"     1     94.6    1.56</code></pre>
+</div>
+</div>
+</section>
+<section id="step-by-step" class="level3" data-number="12.2.2">
+<h3 data-number="12.2.2" class="anchored" data-anchor-id="step-by-step"><span class="header-section-number">12.2.2</span> Step by step</h3>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-68_a8814b0f96e755bbc9710ea6e95a98aa">
+<div class="sourceCode cell-code" id="cb160"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb160-1"><a href="#cb160-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Alpha entropy</span></span>
+<span id="cb160-2"><a href="#cb160-2" aria-hidden="true" tabindex="-1"></a>paracou_6_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb160-3"><a href="#cb160-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ent_tsallis</span>(<span class="at">q =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb160-4"><a href="#cb160-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Mean entropy</span></span>
+<span id="cb160-5"><a href="#cb160-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(order) <span class="sc">%&gt;%</span> </span>
+<span id="cb160-6"><a href="#cb160-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">ent_alpha =</span> <span class="fu">mean</span>(entropy)) <span class="sc">%&gt;%</span> </span>
+<span id="cb160-7"><a href="#cb160-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Diversity</span></span>
+<span id="cb160-8"><a href="#cb160-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">div_alpha =</span> <span class="fu">exp_q</span>(ent_alpha, <span class="at">q =</span> <span class="dv">1</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb160-9"><a href="#cb160-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>() <span class="ot">-&gt;</span></span>
+<span id="cb160-10"><a href="#cb160-10" aria-hidden="true" tabindex="-1"></a>  paracou_6_alpha</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  order ent_alpha div_alpha
+  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+1     1      4.62      102.</code></pre>
+</div>
+</div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-69_39c9ecde0030c5bae7a2df39b0e51cf3">
+<div class="sourceCode cell-code" id="cb162"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb162-1"><a href="#cb162-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gamma entropy</span></span>
+<span id="cb162-2"><a href="#cb162-2" aria-hidden="true" tabindex="-1"></a>paracou_6_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb162-3"><a href="#cb162-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Group the subplots</span></span>
+<span id="cb162-4"><a href="#cb162-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">metacommunity</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb162-5"><a href="#cb162-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ent_tsallis</span>(<span class="at">q =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb162-6"><a href="#cb162-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Rename entropy for clarity</span></span>
+<span id="cb162-7"><a href="#cb162-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">ent_gamma =</span> entropy) <span class="sc">%&gt;%</span> </span>
+<span id="cb162-8"><a href="#cb162-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Diversity</span></span>
+<span id="cb162-9"><a href="#cb162-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">div_gamma =</span> <span class="fu">exp_q</span>(ent_gamma, <span class="at">q =</span> <span class="dv">1</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb162-10"><a href="#cb162-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>() <span class="ot">-&gt;</span></span>
+<span id="cb162-11"><a href="#cb162-11" aria-hidden="true" tabindex="-1"></a>  paracou_6_gamma</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 6
+  site          weight estimator order ent_gamma div_gamma
+  &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+1 metacommunity   6.25 UnveilJ       1      4.71      111.</code></pre>
+</div>
+</div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-70_09fff4f39847d767cb6f5631614cc822">
+<div class="sourceCode cell-code" id="cb164"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb164-1"><a href="#cb164-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a single tibble with alpha and gamma diversities</span></span>
+<span id="cb164-2"><a href="#cb164-2" aria-hidden="true" tabindex="-1"></a>paracou_6_alpha <span class="sc">%&gt;%</span> </span>
+<span id="cb164-3"><a href="#cb164-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(</span>
+<span id="cb164-4"><a href="#cb164-4" aria-hidden="true" tabindex="-1"></a>    paracou_6_gamma <span class="sc">%&gt;%</span> </span>
+<span id="cb164-5"><a href="#cb164-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(ent_gamma, div_gamma)</span>
+<span id="cb164-6"><a href="#cb164-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb164-7"><a href="#cb164-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb164-8"><a href="#cb164-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># beta entropy</span></span>
+<span id="cb164-9"><a href="#cb164-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">ent_beta =</span> ent_gamma <span class="sc">-</span> ent_alpha,</span>
+<span id="cb164-10"><a href="#cb164-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># beta diversity</span></span>
+<span id="cb164-11"><a href="#cb164-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">div_beta =</span> div_gamma <span class="sc">/</span> div_alpha</span>
+<span id="cb164-12"><a href="#cb164-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 7
+  order ent_alpha div_alpha ent_gamma div_gamma ent_beta div_beta
+  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
+1     1      4.62      102.      4.71      111.   0.0826     1.09</code></pre>
+</div>
+</div>
+</section>
+<section id="profiles" class="level3" data-number="12.2.3">
+<h3 data-number="12.2.3" class="anchored" data-anchor-id="profiles"><span class="header-section-number">12.2.3</span> Profiles</h3>
+<p>Not implemented yet in divent.</p>
+<p>alpha diversity.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-71_efac6739fcbe4a2f33649267066de662">
+<div class="sourceCode cell-code" id="cb166"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb166-1"><a href="#cb166-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Values of q used for computation: default values of profile_xxx()</span></span>
+<span id="cb166-2"><a href="#cb166-2" aria-hidden="true" tabindex="-1"></a>orders <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">0</span>, <span class="at">to =</span> <span class="dv">2</span>, <span class="at">by =</span> <span class="fl">0.1</span>)</span>
+<span id="cb166-3"><a href="#cb166-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(</span>
+<span id="cb166-4"><a href="#cb166-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Apply ent_tsallis to all orders</span></span>
+<span id="cb166-5"><a href="#cb166-5" aria-hidden="true" tabindex="-1"></a>  orders,</span>
+<span id="cb166-6"><a href="#cb166-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">FUN =</span> \(q) {</span>
+<span id="cb166-7"><a href="#cb166-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get a number to obtain a matrix with sapply</span></span>
+<span id="cb166-8"><a href="#cb166-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ent_tsallis</span>(paracou_6_abd, <span class="at">q =</span> q, <span class="at">as_numeric =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb166-9"><a href="#cb166-9" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb166-10"><a href="#cb166-10" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb166-11"><a href="#cb166-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Each row contains a subbplot, each column an order, values are entropy</span></span>
+<span id="cb166-12"><a href="#cb166-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate mean entropy (weights are equal)</span></span>
+<span id="cb166-13"><a href="#cb166-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">colMeans</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb166-14"><a href="#cb166-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Diversity</span></span>
+<span id="cb166-15"><a href="#cb166-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">exp_q</span>(<span class="at">q =</span> orders) <span class="sc">%&gt;%</span> </span>
+<span id="cb166-16"><a href="#cb166-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make a tibble</span></span>
+<span id="cb166-17"><a href="#cb166-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb166-18"><a href="#cb166-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">order =</span> orders,</span>
+<span id="cb166-19"><a href="#cb166-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">div_alpha =</span> .</span>
+<span id="cb166-20"><a href="#cb166-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb166-21"><a href="#cb166-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>() <span class="ot">-&gt;</span></span>
+<span id="cb166-22"><a href="#cb166-22" aria-hidden="true" tabindex="-1"></a>  paracou_6_alpha_profile</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 21 × 2
+   order div_alpha
+   &lt;dbl&gt;     &lt;dbl&gt;
+ 1   0        329.
+ 2   0.1      297.
+ 3   0.2      267.
+ 4   0.3      239.
+ 5   0.4      213.
+ 6   0.5      189.
+ 7   0.6      167.
+ 8   0.7      148.
+ 9   0.8      130.
+10   0.9      115.
+# ℹ 11 more rows</code></pre>
+</div>
+</div>
+<p>gamma diversity.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-72_21b2cb194f52cb5d7bb60500ee9bcb88">
+<div class="sourceCode cell-code" id="cb168"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb168-1"><a href="#cb168-1" aria-hidden="true" tabindex="-1"></a>paracou_6_abd <span class="sc">%&gt;%</span> </span>
+<span id="cb168-2"><a href="#cb168-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">profile_hill</span>(<span class="at">gamma =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb168-3"><a href="#cb168-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Rename diversity to recongnize gamma later</span></span>
+<span id="cb168-4"><a href="#cb168-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">div_gamma =</span> diversity) <span class="sc">%&gt;%</span> </span>
+<span id="cb168-5"><a href="#cb168-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>() <span class="ot">-&gt;</span></span>
+<span id="cb168-6"><a href="#cb168-6" aria-hidden="true" tabindex="-1"></a>  paracou_6_gamma_profile</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 21 × 3
+   estimator order div_gamma
+   &lt;chr&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+ 1 UnveilJ     0        473 
+ 2 UnveilJ     0.1      412.
+ 3 UnveilJ     0.2      357.
+ 4 UnveilJ     0.3      308.
+ 5 UnveilJ     0.4      265.
+ 6 UnveilJ     0.5      227.
+ 7 UnveilJ     0.6      195.
+ 8 UnveilJ     0.7      168.
+ 9 UnveilJ     0.8      145.
+10 UnveilJ     0.9      126.
+# ℹ 11 more rows</code></pre>
+</div>
+</div>
+<p>Compute beta.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-73_d46d1c8bbd313d550949fd049de22ee2">
+<div class="sourceCode cell-code" id="cb170"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb170-1"><a href="#cb170-1" aria-hidden="true" tabindex="-1"></a>paracou_6_gamma_profile <span class="sc">%&gt;%</span> </span>
+<span id="cb170-2"><a href="#cb170-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Join the tibbles by identical order</span></span>
+<span id="cb170-3"><a href="#cb170-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(paracou_6_alpha_profile) <span class="sc">%&gt;%</span> </span>
+<span id="cb170-4"><a href="#cb170-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate beta diversity</span></span>
+<span id="cb170-5"><a href="#cb170-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">div_beta =</span> div_gamma <span class="sc">/</span> div_alpha) <span class="sc">%&gt;%</span> </span>
+<span id="cb170-6"><a href="#cb170-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>() <span class="ot">-&gt;</span></span>
+<span id="cb170-7"><a href="#cb170-7" aria-hidden="true" tabindex="-1"></a>  paracou_6_profile</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining with `by = join_by(order)`</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 21 × 5
+   estimator order div_gamma div_alpha div_beta
+   &lt;chr&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+ 1 UnveilJ     0        473       329.     1.44
+ 2 UnveilJ     0.1      412.      297.     1.39
+ 3 UnveilJ     0.2      357.      267.     1.34
+ 4 UnveilJ     0.3      308.      239.     1.29
+ 5 UnveilJ     0.4      265.      213.     1.24
+ 6 UnveilJ     0.5      227.      189.     1.20
+ 7 UnveilJ     0.6      195.      167.     1.17
+ 8 UnveilJ     0.7      168.      148.     1.14
+ 9 UnveilJ     0.8      145.      130.     1.12
+10 UnveilJ     0.9      126.      115.     1.10
+# ℹ 11 more rows</code></pre>
+</div>
+</div>
+<p>Plot.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-74_73a8db8068795468b5984abc43149c96">
+<div class="sourceCode cell-code" id="cb173"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb173-1"><a href="#cb173-1" aria-hidden="true" tabindex="-1"></a>paracou_6_profile <span class="sc">%&gt;%</span> </span>
+<span id="cb173-2"><a href="#cb173-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># paracou_6_profile is an object of class profile that can be plotted</span></span>
+<span id="cb173-3"><a href="#cb173-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># The column to plot must be named diversity</span></span>
+<span id="cb173-4"><a href="#cb173-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">diversity =</span> div_alpha) <span class="sc">%&gt;%</span> </span>
+<span id="cb173-5"><a href="#cb173-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>() <span class="sc">+</span> </span>
+<span id="cb173-6"><a href="#cb173-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-74-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-75_71faba31e4e864ceb6bdb685765613f0">
+<div class="sourceCode cell-code" id="cb174"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb174-1"><a href="#cb174-1" aria-hidden="true" tabindex="-1"></a>paracou_6_profile <span class="sc">%&gt;%</span> </span>
+<span id="cb174-2"><a href="#cb174-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># rename div_beta to plot it</span></span>
+<span id="cb174-3"><a href="#cb174-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">diversity =</span> div_beta) <span class="sc">%&gt;%</span> </span>
+<span id="cb174-4"><a href="#cb174-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>() <span class="sc">+</span> </span>
+<span id="cb174-5"><a href="#cb174-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-75-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Berger1970" class="csl-entry" role="listitem">
+Berger, Wolfgang H., and Frances L. Parker. 1970. <span>“Diversity of Planktonic Foraminifera in Deep-Sea Sediments.”</span> <em>Science</em> 168 (3937): 1345–47. <a href="https://doi.org/10.1126/science.168.3937.1345">https://doi.org/10.1126/science.168.3937.1345</a>.
+</div>
+<div id="ref-Chao2012b" class="csl-entry" role="listitem">
+Chao, Anne, and Lou Jost. 2012. <span>“Coverage-Based Rarefaction and Extrapolation: Standardizing Samples by Completeness Rather Than Size.”</span> <em>Ecology</em> 93 (12): 2533–47. <a href="https://doi.org/10.1890/11-1952.1">https://doi.org/10.1890/11-1952.1</a>.
+</div>
+<div id="ref-etienne2005" class="csl-entry" role="listitem">
+Etienne, Rampal S. 2005. <span>“A New Sampling Formula for Neutral Biodiversity.”</span> <em>Ecology Letters</em> 8 (3): 253–60. <a href="https://doi.org/10.1111/j.1461-0248.2004.00717.x">https://doi.org/10.1111/j.1461-0248.2004.00717.x</a>.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
