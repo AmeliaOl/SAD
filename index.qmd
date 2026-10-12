@@ -1011,7 +1011,7 @@ Additive partitioning: 10 effective species ($\gamma$) = 5 effective species per
 
 ## Paracou 6
 
-The plot is made of 4 , subplots.
+The plot is made of 4 , subplots...
 
 ```{r}
 # Diversity profiles of the 4 subplots
